@@ -1,4 +1,4 @@
-import { LongestPalindromeSubstring } from "../../strings/longest-palindrome-substring";
+import LongestPalindromeSubstring from "../../src/strings/longest-palindrome-substring";
 describe("test Longest Palindromic Substring", () => {
 	test("it should return correct longest substring of palindrome", () => {
 		expect(LongestPalindromeSubstring("ccsdabacsss")).toBe("aba");

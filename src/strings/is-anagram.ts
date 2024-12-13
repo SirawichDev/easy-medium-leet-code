@@ -1,4 +1,4 @@
-export function isAnagram(s: string, t: string): boolean {
+export default function IsAnagram(s: string, t: string): boolean {
     if (s.length !== t.length) {
         return false
     }

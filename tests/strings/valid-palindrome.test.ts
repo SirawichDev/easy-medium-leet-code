@@ -1,4 +1,4 @@
-import { ValidPalidrome } from '../../strings/valid-palindrome'
+import ValidPalidrome from '../../src/strings/valid-palindrome'
 describe('test valid palindrome', () => { 
   test('should return true when string input is palindrome', () =>{
     expect(ValidPalidrome('aba')).toBe(true)

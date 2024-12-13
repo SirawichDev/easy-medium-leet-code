@@ -1,4 +1,4 @@
-export function ValidPalidrome(s: string): boolean {
+export default function ValidPalidrome(s: string): boolean {
 	const cleanTxt = s.toLowerCase().replace(/[\W_]/g, "");
 
 	let left = 0;

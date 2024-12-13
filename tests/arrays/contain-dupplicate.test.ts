@@ -1,4 +1,4 @@
-import { ContainDuplicate } from '../../arrays/contain-dupplicate'
+import ContainDuplicate from '../../src/arrays/contain-dupplicate'
 describe("test contain dupplicate", () => {
     test('returns true for an array with duplicates', () => {
       expect(ContainDuplicate([1, 2, 3, 4, 1])).toBe(true);

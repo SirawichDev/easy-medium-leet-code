@@ -1,4 +1,4 @@
-export function ContainDuplicate(nums: number[]): boolean {
+export default function ContainDuplicate(nums: number[]): boolean {
     const visitedNum: Record<number, number> = {}
     for (let i = 0; i< nums.length; i++) {
         const num = nums[i]

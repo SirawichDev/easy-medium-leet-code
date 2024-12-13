@@ -1,4 +1,4 @@
-export function TwoSums(arr: Array<number>, target: number): number[] {
+export default function TwoSums(arr: Array<number>, target: number): number[] {
 
     const hashMap: Record<number, number> = {}
     const stack: Array<number> = []

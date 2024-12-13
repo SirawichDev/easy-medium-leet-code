@@ -1,5 +1,4 @@
-// Longest Palindromic Substring
-export function LongestPalindromeSubstring(s: string): string {
+export default function LongestPalindromeSubstring(s: string): string {
 	let start = 0;
 	let maxLength = 1;
 

@@ -1,4 +1,4 @@
-export function ValidParentheses(s: string): boolean {
+export default function ValidParentheses(s: string): boolean {
 	const stack: Array<string> = [];
 	const hashMap: Record<string, string> = { "(": ")", "{": "}", "[": "]" };
 
