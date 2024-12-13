@@ -1,4 +1,4 @@
-export function lengthOfLongestSubstrings(s: string): number {
+export default function LengthOfLongestSubstrings(s: string): number {
     const hashMap: Record<string, number> = {}
     let windowStart = 0
     let maxLength = 0
