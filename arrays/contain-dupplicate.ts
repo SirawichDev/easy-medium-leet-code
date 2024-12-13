@@ -1,5 +1,5 @@
-function ContainDuplicate(nums: number[]): boolean {
-    const visitedNum = {}
+export function ContainDuplicate(nums: number[]): boolean {
+    const visitedNum: Record<number, number> = {}
     for (let i = 0; i< nums.length; i++) {
         const num = nums[i]
         if (visitedNum[num]) {
@@ -10,6 +10,3 @@ function ContainDuplicate(nums: number[]): boolean {
     }
     return false
 }
-
-
-console.log(ContainDuplicate([2,3,4,4,]))

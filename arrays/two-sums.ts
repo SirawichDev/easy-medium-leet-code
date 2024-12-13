@@ -1,20 +1,19 @@
-function twoSums(arr: number[], target: number): number[] {
+export function TwoSums(arr: Array<number>, target: number): number[] {
 
-    const hashMap = {}
-    const stack = []
+    const hashMap: Record<number, number> = {}
+    const stack: Array<number> = []
 
-    for (let i = 0; i < arr.length; i ++) {
+    for (let i:number = 0; i < arr.length; i ++) {
         const num = arr[i]
         const result = target - num
         if (hashMap[result] !== undefined) {
-            stack.push(i)
             stack.push(hashMap[result])
+            stack.push(i)
         }
         hashMap[num] = i
     }
     return stack
 }
-console.log(twoSums([2,7,11,15], 9))
 // {2: 0, 7: 1}
 // Example 1:
 // Input: nums = [2,7,11,15], target = 9

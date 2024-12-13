@@ -1,4 +1,4 @@
-function rob(nums: number[]): number {
+export default function rob(nums: number[]): number {
     if (nums.length === 0) return 0
     if (nums.length === 1) return nums[0]
     if (nums.length === 2) return Math.max(nums[0], nums[1])
@@ -8,8 +8,5 @@ function rob(nums: number[]): number {
         maxLootHouse.push(Math.max(nums[i] + maxLootHouse[i - 2], maxLootHouse[i -1]))
     }
 
-    return maxLootHouse.pop()
+    return maxLootHouse.pop()!
 }
-
-
-console.log(rob([2, 9, 5, 10]))
